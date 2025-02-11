@@ -12,4 +12,16 @@ var curiosidades_chuck_norris=[
 ];
 
 
-console.log(curiosidades_chuck_norris[0])
+var tamanho_colecao = curiosidades_chuck_norris.length
+
+var numero_sorteado = Math.floor(Math.random() * tamanho_colecao);
+
+var curiosidade_escolhida = curiosidades_chuck_norris[numero_sorteado];
+
+var titulo_curiosidade = curiosidade_escolhida.titulo;
+var conteudo_curiosidade = curiosidade_escolhida.conteudo;
+
+
+console.log("CURIOSIDADE SOBRE CHUCK NORRIS")
+console.log("Título: "+titulo_curiosidade);
+console.log("Conteúdo: "+conteudo_curiosidade)
